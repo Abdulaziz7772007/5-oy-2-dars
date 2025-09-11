@@ -31,7 +31,7 @@ function ui(cars) {
 		descripyionEl.innerText = element.description
 		cotegoryEl.innerText = element.category
 		deleteBtnEl.id = element.id
-		console.log(deleteBtnEl.id);
+	
 		
 		
 		containerEl.append(clone)
