@@ -8,7 +8,7 @@ const addBtnEl = document.getElementById('addBtn')
 const prevEl = document.getElementById('prev')
 const nextEl = document.getElementById('next')
 
-
+let token = localStorage.getItem('token')
 const limit = 3
 let skip  = 0
 
@@ -61,14 +61,20 @@ function editEl(editedEl) {
 }
 
 function deleteEl(id) {
-	fetch(`https://json-api.uz/api/project/fn43/cars/${id}`, {
+	if(token) {
+		fetch(`https://json-api.uz/api/project/fn43/cars/${id}`, {
 		method: 'DELETE',
+		Authorization: `Bearer ${token}`
 	})
 		.then(res => {
 			init()
 		})
 		.then(res => {})
 		.finally(() => {})
+	} else {
+		alert("Ro'yxatdan o'ting!")
+		location.href = '/pages/login.html'
+	}
 }
 
 function getById(id) {

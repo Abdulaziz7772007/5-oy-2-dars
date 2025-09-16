@@ -1517,9 +1517,6 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1546,9 +1543,6 @@
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
-  }
-  .w-\[400px\] {
-    width: 400px;
   }
   .w-full {
     width: 100%;
@@ -1624,9 +1618,6 @@
   .flex-shrink {
     flex-shrink: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1700,12 +1691,6 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
-  }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
   }
   .space-y-6 {
     :where(& > :not(:last-child)) {
@@ -1990,26 +1975,17 @@
   .bg-gray-700 {
     background-color: var(--color-gray-700);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-900) 50%, transparent);
     }
   }
-  .bg-lime-400 {
-    background-color: var(--color-lime-400);
-  }
   .bg-pink-600 {
     background-color: var(--color-pink-600);
   }
   .bg-purple-700 {
     background-color: var(--color-purple-700);
-  }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
@@ -2080,18 +2056,6 @@
   }
   .fill-blue-600 {
     fill: var(--color-blue-600);
-  }
-  .apexcharts-gridline {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
   }
   .apexcharts-ycrosshairs {
     stroke: var(--color-gray-200) !important;
@@ -2335,9 +2299,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;
